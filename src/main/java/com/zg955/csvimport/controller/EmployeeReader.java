@@ -22,12 +22,6 @@ import java.util.Scanner;
 @Controller
 public class EmployeeReader {
 
-    //TODO try methods from here
-    // https://www.baeldung.com/java-csv-file-array
-    // Jackson too : https://stackoverflow.com/questions/22485041/how-to-easily-process-csv-file-to-listmyclass
-
-    // TODO detect & skip headline if the csv file has one ?
-
     @Autowired
     CustomProperties customProperties;
 
@@ -84,7 +78,7 @@ public class EmployeeReader {
                 .withCSVParser(parser)
                 .build();
 
-        String[] values = null;
+        String[] values;
         while ((values = csvReader.readNext()) != null) {
             results.add(Arrays.asList(values));
         }
