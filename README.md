@@ -18,6 +18,7 @@ Java tool to read csv and store it in a SQL DB
 - 3 ways to read CSV files : https://www.baeldung.com/java-csv-file-array
 - Stackoverflow discussion about this problematic : https://stackoverflow.com/questions/55084846/fastest-way-to-read-a-csv-file-java
 - Github project of csv comparaison (outdated since 2018) : https://github.com/uniVocity/csv-parsers-comparison
+- Check Spring Batch avec les chunk et les pattern de résilience intégré
 
 # NB
 Doesn't stay on after launch because there are no web server included

@@ -1,4 +1,4 @@
-package com.zg955.csvimport;
+package com.zg955;
 
 import lombok.Data;
 import org.springframework.boot.context.properties.ConfigurationProperties;
@@ -14,4 +14,6 @@ public class CustomProperties {
     private String dataPath;
 
     private String delimiter;
+
+    private int chunkSize;
 }
